@@ -51,6 +51,7 @@ resource "aws_security_group" "sg" {
   description = "dev security group"
   vpc_id      = aws_vpc.main.id
 
+  #change cidr block to your IP
   ingress {
     from_port   = 0
     to_port     = 0
